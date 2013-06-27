@@ -1,7 +1,6 @@
 ControllerExercise::Application.routes.draw do
 
-
-  get '/products' => 'products#index'
+  resources :products
   get '/products/new' => 'products#new'
   post '/products' => 'products#create'
 
